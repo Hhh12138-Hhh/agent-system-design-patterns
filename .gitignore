@@ -1,0 +1,11 @@
+# Planning artifacts (not project files)
+plan.md
+context.json
+exploration_findings.md
+initial_brief.md
+input.txt
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
