@@ -102,6 +102,23 @@ python scripts/analyze_prompt.py path/to/system-prompt.txt
 
 ---
 
+## 🧪 实战对比实验
+
+**真实动手验证，而非纸上谈兵。** 我用同一个需求规格书，分别让 Claude Code（国外）和腾讯云AI代码助手（国内）从零搭建"智能简历解析Agent"Web应用。
+
+| 指标 | Claude Code | 腾讯云AI代码助手 |
+|------|:--:|:--:|
+| 交互轮数 | 1轮 | 1轮 |
+| 报错次数 | 0 | 1（自动修复） |
+| 代码行数 | 1,077 | 1,516 |
+| flask run | ✅ | ✅ |
+| 需求覆盖 | 100% | 100% |
+
+→ 详见 [实验报告](./experiments/experiment_report.md)  
+→ 原始项目：[Claude Code版](./experiments/) | [腾讯云版](./experiments/)
+
+---
+
 ## 🙏 致谢
 
 数据来源：[system-prompts-and-models-of-ai-tools-chinese](https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese)  
