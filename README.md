@@ -10,9 +10,7 @@
 
 ## 🎯 这是什么？
 
-这是一个**AI Agent系统提示词的反向工程研究**。我分析了Claude Code、Cursor、Devin、Kimi等10个主流AI编码工具的**真实系统提示词**（源码级），提炼出7个通用设计模式。
-
-**面试官看完会记住什么？** "这个人不仅会用AI工具，还能看穿AI工具的设计思想。"
+对Claude Code、Cursor、Devin、Kimi等10个主流AI编码工具的**真实系统提示词**进行源码级分析，提炼出7个跨工具的通用设计模式，并反哺到自研Agent框架中验证实战价值。
 
 ---
 
@@ -22,7 +20,7 @@
 ├── README.md                    # 你在看这里
 ├── PATTERNS.md                  # 🔥 7大通用设计模式（核心）
 ├── ANALYSIS.md                  # 10工具逐项深度6维度分析
-├── USAGE.md                     # 📖 使用指南（面试/项目/学习）
+├── USAGE.md                     # 📖 使用指南 + 分析脚本
 ├── IMPROVEMENT_PROPOSAL.md      # 反哺GenericAgent的实战改进方案
 ├── analysis_matrix.md           # 对比矩阵速查表
 ├── scripts/
@@ -32,14 +30,15 @@
     └── matrix.json              # 结构化对比数据(JSON)
 ```
 
-### 阅读路线
+### 文档导航
 
-| 你是谁 | 读什么 | 时间 |
+| 文档 | 内容 | 建议 |
 |---|---|---|
-| 🧑‍💻 面试官/招聘者 | README → PATTERNS → analysis_matrix | 10分钟 |
-| 👨‍💻 Agent开发者 | PATTERNS → ANALYSIS → scripts/ | 30分钟 |
-| 📚 学习者 | ANALYSIS → PATTERNS → USAGE | 20分钟 |
-| 🏗️ 想改进自己的Agent | PATTERNS → IMPROVEMENT_PROPOSAL | 15分钟 |
+| [PATTERNS.md](./PATTERNS.md) | 7大通用设计模式详解（核心） | 先读这个 |
+| [ANALYSIS.md](./ANALYSIS.md) | 10工具6维度逐项分析 | 深入了解 |
+| [analysis_matrix.md](./analysis_matrix.md) | 对比矩阵速查表 | 快速查阅 |
+| [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md) | 反哺GenericAgent的实战改进 | 应用参考 |
+| [USAGE.md](./USAGE.md) | 使用指南 + 分析脚本 | 工具使用 |
 
 ---
 
