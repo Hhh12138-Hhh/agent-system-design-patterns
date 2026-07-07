@@ -10,7 +10,7 @@
 
 ## 🎯 这是什么？
 
-对Claude Code、Cursor、Devin、Kimi等10个主流AI编码工具的**真实系统提示词**进行源码级分析，提炼出7个跨工具的通用设计模式，并反哺到自研Agent框架中验证实战价值。
+对Claude Code、Cursor、Devin、Kimi等10个主流AI编码工具的**真实系统提示词**进行源码级分析，提炼出7个跨工具的通用设计模式，并在实际Agent框架中验证了实战价值。
 
 ---
 
@@ -21,7 +21,7 @@
 ├── PATTERNS.md                  # 🔥 7大通用设计模式（核心）
 ├── ANALYSIS.md                  # 10工具逐项深度6维度分析
 ├── USAGE.md                     # 📖 使用指南 + 分析脚本
-├── IMPROVEMENT_PROPOSAL.md      # 反哺GenericAgent的实战改进方案
+├── IMPROVEMENT_PROPOSAL.md      # 设计模式实战应用案例
 ├── analysis_matrix.md           # 对比矩阵速查表
 ├── scripts/
 │   ├── analyze_prompt.py        # 自动化提示词分析工具
@@ -37,7 +37,7 @@
 | [PATTERNS.md](./PATTERNS.md) | 7大通用设计模式详解（核心） | 先读这个 |
 | [ANALYSIS.md](./ANALYSIS.md) | 10工具6维度逐项分析 | 深入了解 |
 | [analysis_matrix.md](./analysis_matrix.md) | 对比矩阵速查表 | 快速查阅 |
-| [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md) | 反哺GenericAgent的实战改进 | 应用参考 |
+| [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md) | 设计模式实战应用案例 | 应用参考 |
 | [USAGE.md](./USAGE.md) | 使用指南 + 分析脚本 | 工具使用 |
 
 ---
@@ -91,11 +91,11 @@ python scripts/analyze_prompt.py path/to/system-prompt.txt
 
 ## 🏗️ 实战验证
 
-本项目不仅停留在分析层面。我基于发现的7个模式，对**GenericAgent**（我的自研Agent框架）进行了5项改进验证：
+本项目不仅停留在分析层面。基于发现的7个模式，对一个轻量Agent框架进行了5项改进验证：
 
-- ✅ 模式3：语气梯度控制 → GenericAgent的toneAdapt系统
-- ✅ 模式5：渐进式拒绝 → GenericAgent的5级fallback链
-- ✅ 模式6：规划执行分离 → GenericAgent的Plan-Execute阶段
+- ✅ 模式3：语气梯度控制 → toneAdapt语气自适应系统
+- ✅ 模式5：渐进式拒绝 → 5级fallback降级链
+- ✅ 模式6：规划执行分离 → Plan-Execute两阶段架构
 
 → 详见 [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md)
 
@@ -104,7 +104,7 @@ python scripts/analyze_prompt.py path/to/system-prompt.txt
 ## 🙏 致谢
 
 数据来源：[system-prompts-and-models-of-ai-tools-chinese](https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese)  
-分析工具：[GenericAgent](https://github.com/Hhh12138-Hhh/MyGenericAgent) — 全程由AI Agent驱动完成
+本项目全程由AI Agent驱动完成分析工作
 
 ---
 

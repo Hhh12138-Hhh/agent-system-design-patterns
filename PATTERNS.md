@@ -66,7 +66,7 @@ Cursor JSON风格：
 **JSON派更注重"模型API集成"**，工具是Function Calling扩展。
 
 ### 适用场景
-- 自研Agent推荐XML（更灵活，不受模型约束）
+- 自主开发Agent推荐XML（更灵活，不受模型约束）
 - 集成LLM API推荐JSON（原生支持）
 
 ---

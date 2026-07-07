@@ -53,7 +53,7 @@ python scripts/generate_matrix.py
 = 一个安全、优雅、可控的Agent框架
 ```
 
-→ 参考 [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md) 中的GenericAgent改进案例
+→ 参考 [IMPROVEMENT_PROPOSAL.md](./IMPROVEMENT_PROPOSAL.md) 中的设计模式实战改进案例
 
 ---
 
